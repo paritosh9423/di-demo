@@ -11,10 +11,10 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
 //@PropertySource({"classpath:datasource.properties","classpath:jmsSpecific.properties"})
-@PropertySources({
+/*@PropertySources({
     @PropertySource("classpath:datasource.properties"),
         @PropertySource("classpath:jmsSpecific.properties")
-})
+})*/
 public class PropertConfig {
     @Value("${com.paritosh.db.username}")
     String dbUsername;
@@ -47,9 +47,9 @@ public class PropertConfig {
         fakeDataSource.setDbUrl(dbUrl);
         return fakeDataSource;
     }
-    @Bean
+    /*@Bean
     public static PropertySourcesPlaceholderConfigurer properties(){
         PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
         return propertySourcesPlaceholderConfigurer;
-    }
+    }*/ 
 }
