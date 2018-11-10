@@ -1,0 +1,49 @@
+# this is a comment
+#take care of spaces on YAML
+
+name: Paritosh
+
+names:
+      -Paritosh
+      -John Cena
+      -Undertaker
+
+pound_sign: '#'
+
+book:
+      author: Paritosh
+      publisher: WorldPrintSolutions
+
+truth: yes #Boolean
+another_truth: True #Boolean
+one_more_truth: true #Boolean
+
+false: no #Boolean false
+another_false: False #Boolean false
+one_more_false: false #Boolean false
+
+string_val: "It's Truth " # If you have ' OR : in string put that in double quotes
+
+include_new_lines: |
+      Line 1 included
+      Line 2 included and so on.
+
+exclude_new_line: >
+      Line 1
+      Line 2
+      Line 3
+
+com:
+     paritosh:
+            db:
+                  username: myUsername123
+                  password: myPassword
+                  dburl: 'com.IndiaDB.southern.central.com'
+---
+# Three dashes --- means a file seperator in YAML. 
+spring:
+      profiles: de
+com:
+      paritosh:
+            db:
+                  username: GermanUsername
